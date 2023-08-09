@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cajas de colores</title>
+  <style>
+    .colored-box {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+  </style>
+</head>
+<body>
+    {% set num_boxes = 5 %}
+    {% set box_color = 'red' %}
+
+    {% for i in range(num_boxes) %}
+    <div class="colored-box" style="background-color: {{ box_color }};"></div>
+    {% endfor %}
+</body>
+</html>
